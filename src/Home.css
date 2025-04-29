@@ -1,0 +1,252 @@
+.home {
+  padding-top: 80px; /* Espacio para el header fijo */
+}
+
+.home__section {
+  min-height: 100vh;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECF0F1;
+  width: 100%;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home__image {
+  flex: 0 0 auto;
+  max-width: 400px;
+  min-width: 300px;
+  margin-left: 250px; /* Usamos tu enfoque con margin */
+  box-sizing: border-box;
+}
+
+.home__profile-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home__info {
+  flex: 0 0 auto;
+  margin-right: 150px; /* Usamos tu enfoque con margin */
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 800px;
+  background-color: #ffffff; /* Fondo blanco para la card */
+  border: 1px solid #2C3E50; /* Borde oscuro */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 20px; /* Espacio interno */
+}
+
+.home__title {
+  font-size: 2.5rem;
+  color: #2C3E50;
+  margin: 0;
+}
+
+.home__subtitle {
+  font-size: 1.8rem;
+  color: #34495E;
+  margin: 10px 0;
+}
+
+.home__description {
+  font-size: 1.2rem;
+  color: #34495E;
+  margin-bottom: 20px;
+}
+
+.home__skills-title {
+  font-size: 1.5rem;
+  color: #2C3E50;
+  margin-bottom: 15px;
+}
+
+.home__skills-list {
+  list-style: none;
+  padding: 0;
+  display: inline-grid;
+flex-direction: column;
+align-items: center;
+
+}
+
+.home__skill {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.skill__bar {
+  width: 300px;
+  height: 15px;
+  border: 1px solid #2C3E50;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.skill__bar-fill {
+  height: 100%;
+  background-color: #2C3E50;
+}
+
+.bar--75 {
+  width: 75%;
+}
+.skill__icon-container {
+  position: relative; /* Contenedor relativo para posicionar el nombre */
+  display: inline-block; /* Mantiene el flujo en línea */
+}
+.skill__name {
+  position: absolute; /* Posiciona el nombre debajo del ícono */
+  top: 100%; /* Debajo del ícono */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  font-size: 1rem;
+  color: #2C3E50;
+  opacity: 0; /* Oculto por defecto */
+  transition: opacity 0.3s ease; /* Transición suave */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+.skill__icon-container:hover .skill__name {
+  opacity: 1; /* Visible al hacer hover */
+}
+.skill__name--offset {
+font-size: 0.9rem;
+  top: 115%; /* Mueve el texto más abajo para MongoDB, HTML y CSS */
+}
+
+.skill__icon {
+  width: 34px; /* Tamaño del ícono, ajusta según prefieras */
+  height: 34px;
+  vertical-align: middle; /* Alinea el ícono con el texto */
+  transition: transform 0.3s ease;
+}
+.skill__icon:hover {
+  transform: scale(1.3); /* Aumenta al 130% del tamaño original */
+}
+.skill__iconM {
+  width: 54px; /* Tamaño del ícono, ajusta según prefieras */
+  height: 54px;
+  vertical-align: middle; /* Alinea el ícono con el texto */
+  transition: transform 0.3s ease;
+}
+
+/* Resto de las secciones */
+/* ... (mantén el resto del CSS igual hasta profile__section) */
+
+.profile__section {
+  background-color: #ECF0F1;
+  min-height: 100vh;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 30px;
+}
+
+.profile__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.profile__item {
+  background-color: #BDC3C7; /* Color base */
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.profile__item:hover {
+  background-color: #D5D8DC; /* Color más claro al hover */
+  transform: translateY(-5px); /* Sube 5px al hover */
+}
+
+.profile__item-title {
+  font-size: 1.5rem;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.profile__item-text {
+  font-size: 1rem;
+  color: #34495E;
+  line-height: 1.5;
+}
+
+/* ... (mantén el resto del CSS igual después de esto) */
+
+
+
+.projects__section {
+  background-color: #ECF0F1;
+  min-height: 20vh;
+  padding: 40px 20px;
+  text-align: center; /* Asegura que el título esté centrado */
+}
+.section__title {
+  font-size: 2rem;
+  color: #2C3E50;
+  margin-bottom: 30px;
+  text-align: center; /* Centra el título (redundante si projects__section ya lo tiene) */
+}
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.project__item {
+  background-color: #7F8C8D;
+  padding: 20px;
+  border-radius: 10px;
+  color: #ECF0F1;
+  text-align: center;
+  cursor: pointer; /* Indica que es clicable */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animación suave */
+}
+
+.project__item:hover {
+  background-color: #95A5A6; /* Color más claro al hover */
+  transform: translateY(-5px); /* Eleva la card 5px */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home__container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .home__image {
+    max-width: 300px;
+    margin: 0 auto 20px; /* Centramos en móvil */
+  }
+
+  .home__info {
+    margin: 0;
+    padding: 20px;
+  }
+}
