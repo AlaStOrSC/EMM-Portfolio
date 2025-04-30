@@ -16,7 +16,7 @@ function Home() {
     {
       title: 'La Bandida Employee Management System',
       description: 'A system for managing employee schedules and tasks.',
-      technologies: ['JavaScript', 'Express', 'PostgreSQL'],
+      technologies: ['React, JavaScript', 'Express', 'PostgreSQL'],
       github: 'https://github.com/yourusername/la-bandida',
     },
     {
@@ -50,7 +50,7 @@ function Home() {
             <h1 className="home__title">Enrique Macías Moreno</h1>
             <h2 className="home__subtitle">Full Stack Developer</h2>
             <p className="home__description">
-              Junior web developer with strong analytical skills. Passionate about
+              Web developer with strong analytical skills. Passionate about
               technology and problem-solving, eager to grow professionally in the
               web development industry.
             </p>
