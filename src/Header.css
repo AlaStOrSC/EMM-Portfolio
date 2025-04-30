@@ -6,7 +6,6 @@
     top: 0;
     z-index: 10;
   }
-  /* Resto de los estilos como antes... */
 
 .header__container {
     display: flex;
@@ -35,7 +34,7 @@
 .header__nav-list {
     display: flex;
     list-style: none;
-    gap: 30px; /* Más separación entre elementos */
+    gap: 30px; 
     padding: 0;
     margin-right: 20px;
 }
@@ -70,7 +69,7 @@
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Efecto hover: Icono crece y texto aparece desde abajo */
+
 .header__nav-link:hover .header__icon {
     transform: scale(1.2);
 }
